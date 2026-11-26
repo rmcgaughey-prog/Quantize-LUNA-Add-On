@@ -1,0 +1,7 @@
+Copyright (c) 2026 R-McG. All rights reserved.
+
+Permission is granted to download, install and use Quantize with Universal Audio LUNA, including in commercial music production. No permission is granted to redistribute, sublicense, sell, or create derivative works of the R-McG software or artwork.
+
+The software is provided "as is", without warranty of any kind. To the extent permitted by applicable law, R-McG is not liable for damages arising from its use.
+
+Third-party software retains its own license terms, reproduced in THIRD-PARTY-NOTICES.txt. These restrictions do not limit rights granted by those third-party licenses. This license makes no claim to users’ music, audio, MIDI, groove data or other creative output.

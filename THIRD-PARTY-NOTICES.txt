@@ -1,0 +1,303 @@
+LUNA Builder SDK 3.1.1.44
+Copyright 2026 Universal Audio, Inc.
+
+The SDK code included in quantize.js is minified for distribution.
+
+@uaudio/luna-builder-sdk
+Copyright 2026 Universal Audio, Inc.
+
+This product is licensed under the Apache License, Version 2.0. See the LICENSE
+file, or http://www.apache.org/licenses/LICENSE-2.0.
+
+This product includes the ua-luna-builder agent plugin, distributed under the
+same license.
+
+
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets "[]"
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same "printed page" as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+
+# Supplemental Terms for LUNA Builder SDK
+
+**UNIVERSAL AUDIO, INC.**
+
+**SUPPLEMENTAL TERMS FOR LUNA BUILDER SDK**
+
+PLEASE READ THESE SUPPLEMENTAL TERMS FOR LUNA BUILDER SDK (THE "**SUPPLEMENTAL TERMS**") CAREFULLY BEFORE DOWNLOADING THE SOFTWARE THAT ACCOMPANIES THESE SUPPLEMENTAL TERMS. SUCH SOFTWARE IS LICENSED, NOT SOLD. IF THE TERMS AND CONDITIONS CONTAINED HEREIN ARE ACCEPTABLE TO YOU, YOU MAY USE THE SOFTWARE AS PROVIDED BELOW, IN WHICH CASE YOUR AGREEMENT TO THESE SUPPLEMENTAL TERMS SHALL BE EFFECTIVE ON THE DATE OF DOWNLOAD (THE "**EFFECTIVE DATE**").
+
+IF THE TERMS AND CONDITIONS CONTAINED IN THESE SUPPLEMENTAL TERMS ARE NOT ACCEPTABLE TO YOU, YOU MAY NOT USE THE SOFTWARE.
+
+## Background
+
+A. Universal Audio, Inc., a California corporation ("**UA**") has developed and owns a proprietary digital audio work station called "LUNA" that makes it easy for end users to make music.
+
+B. You are a software developer who would like to develop an application (the "**LUNA Add-On**") that would be interoperable with LUNA.
+
+C. To facilitate such development, UA has assembled a software development kit consisting of the software (the "**Kit Software**") and related documentation (the "**Kit Documentation**" and, together with the Kit Software, the "**Kit**") described on [Exhibit A](#exhibit-a) hereto.
+
+D. These Supplemental Terms set forth the terms under which You may use the Kit.
+
+E. Capitalized terms that are not defined herein shall have the meaning set forth in the Apache License, Version 2.0 located at https://www.apache.org/licenses/LICENSE-2.0.txt (LICENSE-2.0.txt) (the "**Apache 2.0 License**").
+
+## Agreement
+
+NOW, THEREFORE, You and UA (together, the "**Parties**") hereby agree as follows:
+
+**1. SDK LICENSE.** UA hereby grants You:
+
+(a) A non-exclusive, worldwide (subject to Section 7 below), royalty-free license to use the Kit Software and Derivative Works thereof in accordance with the Apache 2.0 License (the terms and conditions of which are hereby incorporated by reference) and these Supplemental Terms (together, the "**SDK Agreement**"); and
+
+(b) A non-exclusive, worldwide, royalty-free license to copy and display the Kit Documentation and Derivative Works thereof to its own internal users solely for the purpose of developing the LUNA Add-On.
+
+**2. DISCLAIMER OF WARRANTY.** EXCEPT AS EXPRESSLY REQUIRED BY APPLICABLE LAW: (a) THE KIT IS BEING DELIVERED TO YOU "AS IS," (b) UA MAKES NO WARRANTIES, CONDITIONS, REPRESENTATIONS, OR TERMS (EXPRESS OR IMPLIED WHETHER BY STATUTE, COMMON LAW, CUSTOM, USAGE, OR OTHERWISE) AS TO ANY MATTER AND EXPRESSLY DISCLAIMS ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR ANY PARTICULAR PURPOSE OR NONINFRINGEMENT OF THIRD PARTY RIGHTS AND (c) UA SHALL NO OBLIGATION TO: (i) PROVIDE YOU WITH ANY SUPPORT RELATING TO THE KIT, (ii) PROVIDE YOU WITH ANY UPGRADES OR UPDATES TO THE KIT OR (iii) MAKE FUTIURE VERSIONS OF THE KIT ACCESSIBLE TO YOU.
+
+**3. LIMITATION OF LIABILITY.** TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT WILL UA BE LIABLE TO YOU FOR ANY DAMAGES, CLAIMS, OR COSTS WHATSOEVER. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, UA SHALL NOT BE RESPONSIBLE FOR ANY DIRECT, CONSEQUENTIAL, INDIRECT, INCIDENTAL DAMAGES, OR ANY LOST PROFITS OR LOST SAVINGS, EVEN IF A UA HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS, DAMAGES, CLAIMS, OR COSTS OR FOR ANY CLAIM BY ANY THIRD PARTY.
+
+**4. OWNERSHIP.**
+
+(a) **By UA.**
+
+(i) Except as expressly set forth in this Agreement, UA retains all right, title and interest in: the Kit Software and Kit Documentation and the Intellectual Property Rights embodied therein. For purposes of this Agreement, "**Intellectual Property Rights**" means any and all of the following and all rights in, arising out of or associated therewith: United States and foreign patents, utility models, trademarks, sound marks, copyrights, copyright registrations, mask work rights, trade secrets, moral rights, trade dress, know-how and other intellectual property rights owned by or properly licensed to a Party, whether currently existing or prospective, and including all applications therefor and reissuances, divisions, re-examinations, renewals, extensions, provisionals, continuations and continuations-in-part thereof, and any similar, corresponding or equivalent rights to any of the foregoing anywhere in the world.
+
+(ii) UA also retains all, right, title and interest in: (A) the source code, object code, graphical user interface, algorithms, technology and other components embodied in, or relating to, LUNA itself, (B) all Intellectual Property Rights embodied in the items listed in clause (A) of this paragraph and (C) all Derivative Works of the items listed in clauses (A) and (B) of this paragraph, and no rights are granted to You, whatsoever, with respect to any of the foregoing. If, in its sole discretion, UA grants you a license to use LUNA itself, such license shall be governed solely by the Universal Audio, Inc. End User License Agreement found at https://www.uaudio.com/pages/legal-documents.
+
+(iii) UA also retains all right, title and interest in all: (A) suggestions, comments, bug reports, feedback, ideas, or other information relating to the Kit, to LUNA or any of UA's other products that you provide to UA (together, "**Feedback**"), whether in writing, electronically, orally or via any other mode of communication, (B) all Intellectual Property Rights embodied in the items listed in clause (A) of this paragraph and (C) all Derivative Works of the item listed in clauses (A) and (B) of this paragraph. No rights are granted to You, whatsoever, with respect to any of the foregoing.
+
+(iv) UA also retains all right, title and interest in: (A) all data collected by UA pertaining to, or derived from your interaction with the Kit or any UA products (together "**Usage Data**"), (B) all Intellectual Property Rights embodied in the items listed in clause (A) of this paragraph and (C) all Derivative Works thereof of the items listed in clauses (A) and (B) of this paragraph, other than data that applicable law prohibits UA from owning. No rights are granted to You, whatsoever, with respect to any of the foregoing, except as expressly required by applicable law.
+
+(b) **By You.** You retain all right, title and interest in your LUNA Add-On (subject to the licenses to the Kit Software that UA is granting You under this Agreement), the Intellectual Property Rights embodied therein and all Derivative Works of the foregoing.
+
+**5. YOUR REPRESENTATIONS, WARRANTIES AND COVENANTS TO US; INDEMNITY.**
+
+(a) **Representations, Warranties and Covenants.** You hereby represent, warrant and covenant to UA that:
+
+(i) In developing Your Add-On you will not remove, alter or obscure any proprietary rights notices (including, without limitation, copyright or trademark notices) that are contained in the Kit Software or Kit Documentation;
+
+(ii) In developing Your Add-On, you will not violate any applicable law;
+
+(iii) Your Add-On does not (and will not at any point after the Effective Date) contain any "back door," "drop dead device," "time bomb," "Trojan horse," "virus," "worm," "spyware" (as such terms are commonly understood in the software industry) or any other code designed or intended to have, or capable of performing or facilitating, any of the following: (A) disrupting, disabling, harming or otherwise impeding in any manner the operation of, or providing unauthorized access to, a computer system or network or other device on which such code is stored or installed; (B) bypassing or otherwise subverting UA's copy protection schemes; or (C) compromising the privacy or data security of an end user or damaging or destroying any data or file without the end user's consent;
+
+(iv) You have (and at all times after the Effective Date, will have) sufficient license rights to grant the rights and perform your obligations set forth in this Agreement without creating any obligation on the part of UA including, without limitation, any obligation to pay any royalties or other fees to any third party;
+
+(v) (A) Your Add-On does not infringe (and, at all times after the Effective Date, will not, infringe) any Intellectual Property Right of a third party, and (B) there is no actual or threatened litigation relating to the Add-On alleging that the Add-On infringes or misappropriates any Intellectual Property Rights of a third party. Without limiting the generality of the foregoing, if the Add-On incorporates or otherwise leverages Artificial Intelligence ("**AI**"), You represent and warrant that: (A) in training the models that enable the AI functionality, neither You nor any of your third party partners, has, violated the copyrights or rights of publicity or privacy of any third party, and (B) You shall not use any Submitted Musical Content to train the models that your Add-On leverages or for any other reason, except as expressly authorized by the submitter in writing, in advance.. For purposes of this Agreement, "**Submitted Musical Content**" means any musical compositions, lyrics, sound-recordings, performances, vocals, songs, audio files, or other content that UA or its end users submit to your Add-On for processing; and
+
+(vi) When UA or a UA end user submits Submitted Musical Content to your Add-On for processing, all outputs resulting from such processing (together, "**Outputs**") shall be owned by the submitter. Neither You, nor any of your third party contractors or partners shall use the Outputs for any reason without the prior written consent of the submitter. In particular, but without limiting the generality of the foregoing, neither You nor any of your third party contractors or partners shall use any Output to train any artificial intelligence model, except as expressly authorized by the submitter in writing, in advance.
+
+(b) **Indemnity.** You agree to indemnify, defend and hold harmless UA and its officers, directors, employees, agents and shareholders (each, a "**UA Indemnitee**") for any losses, claims, damages or expenses (each, a "**Claim**") arising out of or relating to a breach of any of your representations, warranties or covenants contained in the Agreement. In connection with each such Claim, the applicable UA Indemnitee shall provide You with: (i) prompt written notice of the Claim and (ii) reasonable assistance, at your expense, in defending and/or settling such Claim, provided, however, that any failure to provide such notice or assistance shall not relieve You of your obligations under this Section 5(b) to the extent that the UA Indemnitee is not prejudiced by such failure. At all times, the UA Indemnitee may retain separate legal counsel and participate in the defense of the applicable Claim. However, so long as You are fulfilling your obligations to defend the Claim: (1) UA will not consent to the entry of any judgment or enter into any settlement with respect to the Claim without your prior written consent of (not to be unreasonably withheld) and (2) You will not consent to the entry of any judgment or enter into any settlement with respect to the Claim without the prior written consent of the UA Indemnitee, which consent may not be unreasonably withheld. If and when You fail to fulfill your obligation to defend the Claim, the UA Indemnitee may defend against, and consent to, the entry of any judgement in any manner he/she may reasonably deem appropriate, and You will remain responsible for all damages, liabilities, losses, settlements, costs and expenses (including reasonable attorney's fees) that the UA Indemnitee may suffer resulting from, or arising out of, the Claim.
+
+**6. U.S. GOVERNMENT-RESTRICTED RIGHTS.** If the Kit is licensed to the United States government or any agency thereof, then the Kit Software and the Documentation will be deemed to be "commercial computer Software" and "commercial computer Software documentation," respectively, pursuant to DFAR Section 227.7202 and FAR Section 12.212, as applicable. Any use, reproduction, release, performance, display or disclosure of the Kit Software and accompanying Documentation by the U.S. Government will be governed solely by the terms of this Agreement and are prohibited except to the extent expressly permitted by the terms of this Agreement.
+
+**7. EXPORT RESTRICTIONS.** You understand and acknowledges that UA is subject to regulation by agencies of the United States, including, but not limited to, the U.S. Department of Commerce, which prohibit export or diversion of certain products and technology to certain countries. Any and all obligations of UA shall be subject in all respects to such laws and regulations as shall from time to time govern the license and delivery of technology and products abroad by persons subject to the jurisdiction of the United States, including without limitation the U.S. Export Administration Act of 1979, as amended, any successor legislation, and the Export Administration Regulations issued by the U.S. Department of Commerce, Bureau of Export Administration. You agree to cooperate with UA including without limitation, providing required documentation, in order to obtain export licenses or exemptions therefrom. You warrant that You will comply with the U.S. Export Administration Regulations and other laws and regulations governing exports in effect from time to time. You further agree not to provide the Kit (or any component thereof) to any organization, public or private, which engages in the research or production of military devices, armaments, or any instruments of warfare, including biological, chemical and nuclear warfare.
+
+**8. GOVERNING LAW.** This Agreement shall be governed by California law, excluding its conflicts of law provisions. The Parties agree to and submit to the exclusive jurisdiction of courts located in Santa Clara County, California. The application of the United Nations Convention of Contracts for the International Sale of Goods is expressly excluded.
+
+**9. PREVAILING PARTY.** In the event of any court action relating to enforcement of this Agreement, including injunctive relief, the non-prevailing Party shall reimburse the prevailing party for all reasonable attorneys' fees and costs, including expert witness fees, resulting therefrom.
+
+**10. GENERAL PROVISIONS.** If any part of this Agreement is found void or unenforceable, it will not affect the validity of the balance of the Agreement, which shall remain valid and enforceable according to its terms. This Agreement may only be modified by UA. Updates may be licensed to You by UA with additional or different terms; UA further reserves rights, in its discretion, not to license updates. This is the entire Agreement between UA and You relating to the Kit and it supersedes any prior representations, discussions, undertakings, communications, or advertising relating to the Kit. Neither Party may assign any of its rights or obligations under this Agreement; provided, however, that UA shall have the right to assign such rights and obligations to an assignee who succeeds to substantially all of UA's business, whether by merger, sale of substantially all assets or stock sale. This Agreement may be executed in counterparts and all so executed shall be deemed a single original.
+
+## Exhibit A
+
+**KIT SOFTWARE; DOCUMENTATION**
+
+LUNA Builder SDK, as updated from time to time by UA, in its sole discretion.
+
+Effective on November 17, 2026

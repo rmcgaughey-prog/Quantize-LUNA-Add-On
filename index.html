@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Quantize · R-McG</title>
+  <link rel="icon" type="image/png" href="assets/quantize-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="titlebar">
+      <div class="brand">
+        <img class="brand-icon" src="assets/quantize-icon.png" width="52" height="52" alt="">
+        <div><h1>Quantize</h1><span class="subtitle">Audio & MIDI quantize · v0.4.1</span></div>
+      </div>
+      <div class="host-status"><span id="connection-light" class="light"></span><span id="connection">Connecting to LUNA…</span></div>
+      <span class="wordmark">R-McG</span>
+    </header>
+
+    <div class="workspace">
+      <aside class="library" aria-label="Groove library">
+        <div class="library-heading">
+          <h2>Groove Library</h2>
+          <span id="groove-count"></span>
+        </div>
+        <div class="tabs library-tabs" role="group" aria-label="Library source">
+          <button type="button" data-library="all" aria-pressed="true">All</button>
+          <button type="button" data-library="factory" aria-pressed="false">Factory</button>
+          <button type="button" data-library="mine" aria-pressed="false">My Grooves</button>
+          <button type="button" data-library="favorites" aria-pressed="false" title="Favorites" aria-label="Favorites">★</button>
+        </div>
+        <div class="search">
+          <input id="search" type="search" aria-label="Search grooves" placeholder="Search grooves">
+          <select id="family" aria-label="Groove family"><option value="">All styles</option></select>
+        </div>
+        <ul id="grooves" class="grooves" aria-label="Grooves"></ul>
+        <div id="empty-library" class="empty-library" hidden>No matching grooves</div>
+        <div class="library-actions" id="drop-zone">
+          <button type="button" id="find">Find Installed Grooves</button>
+          <label class="file-button">Import Files<input type="file" id="files" multiple accept=".grv,.mid,.midi,.json"></label>
+        </div>
+      </aside>
+
+      <section class="editor" aria-label="Quantize settings">
+        <div class="selection-bar">
+          <div class="selection-text"><strong id="selection">Select MIDI in LUNA</strong><span id="scope"></span></div>
+          <button type="button" id="capture" disabled title="Make a groove from selected MIDI notes">Capture Groove</button>
+          <button type="button" id="target-audio" disabled>Apply to Selection…</button>
+          <button type="button" id="capture-audio" disabled>Capture Audio Groove</button>
+        </div>
+        <div class="mode-row">
+          <div class="tabs mode" role="group" aria-label="Quantize mode">
+            <button type="button" data-mode="Straight" aria-pressed="false">Straight</button>
+            <button type="button" data-mode="Swing" aria-pressed="false">Swing</button>
+            <button type="button" data-mode="Groove" aria-pressed="true">Groove</button>
+          </div>
+          <div class="grid-settings" id="grid-settings" hidden>
+            <label class="compact">Grid <select id="division">
+              <option value="4">1/4</option><option value="8">1/8</option>
+              <option value="16" selected>1/16</option><option value="32">1/32</option><option value="64">1/64</option>
+            </select></label>
+            <select id="modifier" aria-label="Grid modifier">
+              <option value="straight">Straight</option><option value="dotted">Dotted</option><option value="triplet">Triplet</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="groove-heading" id="groove-heading">
+          <strong id="groove-title">Pocket 16</strong><span id="groove-detail"></span>
+        </div>
+        <div class="controls">
+          <label class="amount" id="timing-control"><span id="timing-label">Timing</span><input id="timing" type="range" min="0" max="100" value="100" title="How far each note moves toward its target"><output id="timing-value" for="timing">100%</output></label>
+          <label class="amount" id="swing-control" hidden><span>Swing</span><input id="swing" type="range" min="50" max="75" value="60" title="Position of the second subdivision within each pair"><output id="swing-value" for="swing">60%</output></label>
+          <label class="amount" id="velocity-control"><span>Velocity</span><input id="velocity" type="range" min="0" max="100" value="0" title="How much of the groove's accents to transfer"><output id="velocity-value" for="velocity">0%</output></label>
+        </div>
+        <details class="advanced">
+          <summary>Advanced</summary>
+          <div class="advanced-fields">
+            <label class="compact">Safe Range <input id="safe" type="number" min="0" max="100" value="0" title="Protect notes already within this percentage of a grid step of their target">%</label>
+            <label class="compact">Max Move <input id="max-move" type="number" min="0" max="100" value="100" title="Limit the move to this percentage of a grid step">%</label>
+            <label class="compact">Anchor <select id="anchor"><option value="session">Session bars</option><option value="clip">Clip start</option></select></label>
+          </div>
+        </details>
+
+        <section class="preview" aria-labelledby="preview-label">
+          <div class="preview-title">
+            <h2 id="preview-label">Timing Preview</h2>
+            <div class="legend"><span><i></i> Original</span><span><i></i> Proposed</span></div>
+          </div>
+          <div class="graph"><canvas id="preview" aria-label="Timing preview of original and proposed MIDI note positions"></canvas>
+            <span id="graph-empty" hidden>Choose a groove or select MIDI in LUNA</span>
+          </div>
+          <div id="preview-summary" class="preview-summary" aria-live="polite"></div>
+        </section>
+
+        <div class="footer">
+          <div id="notice" class="notice" role="status"></div>
+          <button type="button" id="apply" class="primary" disabled>Apply Groove</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="discovery-dialog">
+    <form method="dialog" class="dialog-top"><h2>Find Installed Grooves</h2><button aria-label="Close" value="close">×</button></form>
+    <p>Choose a folder to scan. LUNA may ask you to allow access. Imports stay on this computer.</p>
+    <div id="sources" class="sources"></div>
+    <div class="dialog-actions"><button type="button" id="scan-folder">Browse Folder…</button><button type="button" id="rescan" hidden>Rescan Approved Folders</button></div>
+    <div id="scan-status" class="notice" role="status"></div>
+    <div id="scan-results"></div>
+  </dialog>
+
+  <dialog id="midi-dialog">
+    <form method="dialog">
+      <h2>Import MIDI Groove</h2>
+      <p id="midi-name"></p>
+      <label class="compact">Reference track <select id="midi-track"></select></label>
+      <label class="compact">Base grid <select id="midi-base"><option value="960">1/4</option><option value="480">1/8</option><option value="320">1/8 Triplet</option><option value="240" selected>1/16</option><option value="160">1/16 Triplet</option><option value="120">1/32</option></select></label>
+      <div class="dialog-actions"><button value="cancel">Cancel</button><button value="import" class="primary">Import Groove</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="capture-dialog">
+    <form method="dialog">
+      <h2>Capture Groove</h2>
+      <label class="compact">Name <input id="capture-name" required maxlength="120"></label>
+      <label class="compact">Base grid <select id="capture-base"><option value="960">1/4</option><option value="480">1/8</option><option value="320">1/8 Triplet</option><option value="240" selected>1/16</option><option value="160">1/16 Triplet</option><option value="120">1/32</option></select></label>
+      <div class="dialog-actions"><button value="cancel" formnovalidate>Cancel</button><button value="capture" class="primary">Save Groove</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="audio-dialog">
+    <form method="dialog" class="dialog-top"><h2 id="audio-dialog-title">Capture Audio Groove</h2><button aria-label="Close" value="cancel">×</button></form>
+    <p id="audio-source"></p>
+    <label class="compact" id="audio-target-select-field" hidden>Review audio clip <select id="audio-target-select"></select></label>
+    <p id="audio-processing-info"></p>
+    <div id="audio-analysis">
+    <label class="compact">Sensitivity <input id="audio-sensitivity" type="range" min="0" max="100" value="55"></label>
+    <p>Review the hits. Adjust times in milliseconds from the phrase start, uncheck unwanted hits, or add a missing hit. Changing sensitivity detects the hits again.</p>
+    <canvas id="audio-wave" width="980" height="150" aria-label="Captured waveform and detected hits"></canvas>
+    <div class="hit-actions"><span id="audio-count"></span><button type="button" id="audio-add">Add Hit</button></div>
+    <div id="audio-hits" class="audio-hits"></div>
+    </div>
+    <section id="audio-target-settings" hidden>
+      <label class="compact">Groove <select id="audio-groove"></select></label>
+      <label class="compact">Algorithm <select id="audio-algorithm"></select></label>
+      <p id="audio-pitch-info">The selected LUNA algorithm preserves pitch.</p>
+      <label class="compact">Timing <input id="audio-timing" type="range" min="0" max="100" value="100"><output id="audio-timing-value">100%</output></label>
+      <div class="advanced-fields">
+        <label class="compact">Safe Range <input id="audio-safe" type="number" min="0" max="100" value="0">%</label>
+        <label class="compact">Max Move <input id="audio-max-move" type="number" min="0" max="100" value="100">%</label>
+        <label class="compact">Anchor <select id="audio-anchor"><option value="session">Session bars</option><option value="clip">Clip start</option></select></label>
+      </div>
+      <p id="audio-plan-summary" role="status"></p>
+      <p>Audio originals stay on their source playlists. Existing clip processing is preserved in an audio print on the duplicate before the new groove. The whole audio and MIDI Apply is one LUNA Undo step.</p>
+    </section>
+    <form id="audio-save">
+      <label class="compact" id="audio-name-field">Name <input id="audio-name" required maxlength="120"></label>
+      <label class="compact" id="audio-base-field">Base grid <select id="audio-base"><option value="960">1/4</option><option value="480">1/8</option><option value="320">1/8 Triplet</option><option value="240" selected>1/16</option><option value="160">1/16 Triplet</option><option value="120">1/32</option></select></label>
+      <div id="audio-status" class="notice" role="status"></div>
+      <div class="dialog-actions"><button type="submit" id="audio-save-button" class="primary">Save Groove</button></div>
+    </form>
+  </dialog>
+
+  <script src="quantize.js"></script>
+</body>
+</html>
