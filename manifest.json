@@ -1,8 +1,8 @@
 {
   "package_name": "Quantize",
-  "id": "com.timbralresearch.quantize",
+  "id": "com.rmcg.quantize",
   "title": "Quantize",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "manufacturer": "R-McG",
   "description": "Transfer the feel of one performance to another. Capture grooves from audio or MIDI, save reusable templates, and tighten selected audio clips and MIDI notes with adjustable timing, swing and LUNA’s native audio algorithms.",
   "sdk_version": "3.1.1.44",

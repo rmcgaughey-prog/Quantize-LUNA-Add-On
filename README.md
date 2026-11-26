@@ -1,6 +1,6 @@
 # Quantize for LUNA
 
-**R-McG · Version 0.4.1 · Editing / MIDI / Workflow**
+**R-McG · Version 0.4.2 · Editing / MIDI / Workflow**
 
 Transfer the feel of one performance to another. Capture grooves from audio or MIDI, save reusable templates, and tighten selected audio clips and MIDI notes with adjustable timing, swing and LUNA’s native audio algorithms.
 
